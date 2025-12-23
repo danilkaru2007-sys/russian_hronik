@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  background-image: url("./image/kreml_zdaniia_arhitektura_160540_1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 1;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  color: #1e90ff;
+  margin: 0;
+}
+
+h1 { font-size: 2.5em; }
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+h2.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff4500, #1e90ff);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.header {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6e6fa 100%);
+  color: #000;
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.background-container { margin-bottom: 10px; }
+
+.text-container h1 { letter-spacing: 1px; }
+
+.user-greeting {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.poznai-text p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #666;
+}
+
+/* Верхнее меню */
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 15px;
+}
+
+.table a {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+.table a:hover {
+  background: #1e90ff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.table .rh { font-weight: 500; }
+
+/* Общие текстовые блоки */
+.putesh, .ot_drev {
+  margin: 15px auto;
+  font-size: 1em;
+  max-width: 700px;
+  color: #555;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Блок с картинками на главной */
+.nav-section {
+  padding: 50px 0;
+  background: #fafafa;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.grid-img:hover { transform: scale(1.05); }
+
+/* Основные инфо-секции */
+.info-section {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.info-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.figure-text, .card-text { padding: 25px; }
+
+.figure-text h3, .event-card h3, .military-card h3, .region-card h3 {
+  margin-bottom: 15px;
+  color: #ff4500;
+}
+
+ul { list-style: none; padding: 0; }
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #1e90ff;
+}
+
+/* Кнопки */
+.hist-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #1e90ff, #ff4500);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.hist-btn:hover {
+  background: linear-gradient(90deg, #ff4500, #1e90ff);
+  transform: scale(1.05);
+}
+
+.figure-card, .event-card, .military-card, .region-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.figure-img, .event-img, .military-img, .region-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Таблица-хронология */
+.history-table-section {
+  padding: 40px 0;
+  background: #ffffff;
+}
+
+.history-table-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.history-table thead {
+  background: linear-gradient(90deg, #1e90ff, #ff4500);
+  color: #fff;
+}
+
+.history-table th,
+.history-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95em;
+}
+
+.history-table tr:nth-child(even) td { background-color: #f5f7fa; }
+
+/* Видео и аудио */
+.video-section, .audio-section {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.video-section video,
+.audio-section audio {
+  display: block;
+  margin: 15px auto;
+}
+
+/* Формы */
+.contact { padding: 40px 0 60px; background: #ffffff; }
+
+.contact-form, .region-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label, .region-form label {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea,
+.region-form select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+}
+
+.contact-form textarea { min-height: 80px; resize: vertical; }
+
+.contact-form button, .region-form button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(90deg, #1e90ff, #ff4500);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+.contact-form button:hover,
+.region-form button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form-message, .region-output {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Подвал */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer p { margin: 0; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  h1 { font-size: 2em; }
+
+  .table {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h1 { font-size: 1.8em; }
+  .image-grid { grid-template-columns: 1fr; }
+}
+
+/* Дополнительные правки карточек */
+.info-card p { margin-bottom: 0.6rem; line-height: 1.6; }
+
+.info-card ul {
+  margin: 0.6rem 0 0.4rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.info-card ul li {
+  margin-bottom: 0.25rem;
+  border-left: none;
+  padding-left: 0;
+}
+
+.info-card ul li strong { font-weight: 600; }
+
+.info-section .intro-text {
+  max-width: 900px;
+  margin: 1rem auto 2rem;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.figure-card, .event-card, .military-card, .region-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.figure-text { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.info-card h3 { font-size: 1.15rem; margin-bottom: 0.3rem; }
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-top: 0.4rem;
+}
+
+.figure-img, .event-img, .military-img, .region-img { max-height: 260px; }
+
+.card-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+
+@media (min-width: 768px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+
+@media (max-width: 600px) {
+  .history-table {
+    border: 0;
+    background: transparent;
+  }
+
+  .history-table thead { display: none; }
+
+  .history-table tbody,
+  .history-table tr,
+  .history-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .history-table tr {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .history-table td {
+    border: 0;
+    padding: 8px 0;
+    text-align: left;
+    background: transparent;
+  }
+
+  .history-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
+    opacity: 0.85;
+  }
+
+  .history-table tr:nth-child(even) td { background: transparent; }
+}
+.articles-section { padding: 40px 0; background: #ffffff; }
+
+.articles-controls {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  display: grid;
+  gap: 8px;
+  text-align: left;
+}
+
+.articles-controls input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95em;
+}
+
+.articles-list {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.article-item {
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.article-item h3 { margin-bottom: 6px; color: #ff4500; }

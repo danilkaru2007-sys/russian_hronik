@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Русские хроники – Главная</title>
+
+  <link rel="stylesheet" href="./clc.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<header class="header">
+  <div class="background-container">
+    <div class="text-container">
+      <h1>Русские хроники</h1>
+      <p id="user-greeting" class="user-greeting"></p>
+    </div>
+  </div>
+
+  <div class="poznai-text">
+    <p>Познайте богатое наследие российской истории через века традиций, великих личностей и судьбоносных событий.</p>
+  </div>
+
+  <nav class="table" aria-label="Главная навигация">
+    <a class="rh" href="index.html">Русские<br />хроники</a>
+    <a class="gl" href="index.html">Главная</a>
+    <a class="istoria" href="regions.html">История регионов</a>
+    <a class="velsob" href="events.html">Великие события</a>
+    <a class="znamdet" href="figures.html">Знаменитые деятели</a>
+    <a class="voenhistor" href="military.html">Военная история</a>
+  </nav>
+
+  <div class="putesh">
+    <p>Путешествие сквозь века российской истории</p>
+  </div>
+
+  <div class="ot_drev">
+    <p>
+      От древних княжеств до современной России — исследуйте ключевые моменты,
+      которые сформировали нашу великую державу. Каждая страница нашего сайта
+      открывает новые грани многовековой истории.
+    </p>
+  </div>
+
+  <img src="./image/Moskva_788_560.webp" alt="Не загрузилось фото." class="hero-img" />
+
+  <section class="nav-section" aria-labelledby="temy-title">
+    <h2 id="temy-title" class="section-title">Тематические разделы</h2>
+    <p class="section-subtitle">Погрузитесь в различные аспекты российской истории и культуры</p>
+    <div class="image-grid">
+      <img src="./image/Voina.jpg" alt="Военные сражения" class="grid-img" />
+      <img src="./image/270452457.jpg" alt="Исторические деятели" class="grid-img" />
+      <img src="./image/image10.jpg" alt="Исторические руины" class="grid-img" />
+      <img src="./image/Moscow.jpg" alt="Культурное наследие" class="grid-img" />
+    </div>
+  </section>
+</header>
+
+<main>
+  <!-- Таблица-хронология -->
+  <section class="history-table-section">
+    <div class="container">
+      <h2 class="section-title">Краткая хронология ключевых событий</h2>
+
+      <div class="history-table-wrapper">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Период</th>
+              <th>Событие</th>
+              <th>Тип</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>988 год</td>
+              <td>Крещение Руси князем Владимиром</td>
+              <td>Религия и культура</td>
+            </tr>
+            <tr>
+              <td>1242 год</td>
+              <td>Ледовое побоище на Чудском озере</td>
+              <td>Военная история</td>
+            </tr>
+            <tr>
+              <td>1703 год</td>
+              <td>Основание Санкт-Петербурга Петром I</td>
+              <td>Государственное строительство</td>
+            </tr>
+            <tr>
+              <td>1941–1945 годы</td>
+              <td>Великая Отечественная война</td>
+              <td>Военная история</td>
+            </tr>
+            <tr>
+              <td>1957–1961 годы</td>
+              <td>Первые успехи СССР в космосе</td>
+              <td>Наука и техника</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Статьи -->
+  <section class="articles-section">
+    <div class="container">
+      <h2 class="section-title">Статьи в истории России</h2>
+
+      <div class="articles-controls">
+        <label for="search-input">Поиск по названию:</label>
+        <input id="search-input" type="text" placeholder="Например: Повесть временных лет" />
+      </div>
+
+      <div id="articles-list" class="articles-list"></div>
+    </div>
+  </section>
+
+  <!-- Видео -->
+  <section class="video-section">
+    <div class="container">
+      <h2 class="section-title">Выстрел из пушки 18 века</h2>
+      <video width="320" height="240" controls>
+        <source src="video/0001-0250-my1rkp.mp4" type="video/mp4" />
+      </video>
+      <p class="media-caption media-caption-framed">
+        Посмотрите фрагмент выстрела из русской пушки 18 века.
+      </p>
+    </div>
+  </section>
+
+  <!-- Аудио -->
+  <section class="audio-section">
+    <div class="container">
+      <h2 class="section-title">Гимн России</h2>
+      <audio controls>
+        <source src="audio/gimn-rossii-gimn-rossii-so-slovam2.mp3" type="audio/mpeg" />
+      </audio>
+      <p class="media-caption media-caption-framed">
+        Наслаждайтесь мелодией государственного гимна Российской Федерации.
+      </p>
+    </div>
+  </section>
+
+  <!-- Формы -->
+  <section class="contact info-section">
+    <div class="container">
+      <h2 class="section-title">Форма контактной информации</h2>
+
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required="re" />
+
+        <label for="email">Ваша почта:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Сообщение создателю сайта:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Отправить</button>
+        <p class="form-message"></p>
+      </form>
+
+      <h2 class="section-title">Выбор региона проживания</h2>
+
+      <form action="#" method="post" class="region-form">
+        <label for="region">Выберите регион:</label>
+        <select id="region" name="region">
+          <option value="">-- Выберите --</option>
+          <option value="Москва">Москва</option>
+          <option value="Санкт-Петербург">Санкт-Петербург</option>
+          <option value="Новосибирск">Новосибирск</option>
+          <option value="Екатеринбург">Екатеринбург</option>
+        </select>
+
+        <button type="submit">Подтвердить выбор</button>
+        <p class="region-output"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Русские хроники. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

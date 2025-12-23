@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Русские хроники – Великие события</title>
+
+  <link rel="stylesheet" href="./clc.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<header class="header">
+  <div class="background-container">
+    <div class="text-container">
+      <h1>Русские хроники</h1>
+      <p id="user-greeting" class="user-greeting"></p>
+    </div>
+  </div>
+
+  <div class="poznai-text">
+    <p>Ключевые события, определившие судьбу страны.</p>
+  </div>
+
+  <nav class="table" aria-label="Главная навигация">
+    <a class="rh" href="index.html">Русские<br>хроники</a>
+    <a class="gl" href="index.html">Главная</a>
+    <a class="istoria" href="regions.html">История регионов</a>
+    <a class="velsob" href="events.html">Великие события</a>
+    <a class="znamdet" href="figures.html">Знаменитые деятели</a>
+    <a class="voenhistor" href="military.html">Военная история</a>
+  </nav>
+</header>
+
+<main>
+  <section id="events-section" class="info-section">
+    <div class="container">
+      <h2 class="section-title">Великие события</h2>
+
+      <div class="card-grid">
+        <article class="info-card event-card">
+          <h3>Крещение Руси (988 год)</h3>
+          <p>Принятие христианства князем Владимиром стало переломным моментом в истории Восточной Европы. Вместо разрозненных языческих культов возникла единая духовная основа, объединившая различные племена и княжества.</p>
+          <p>С христианством на Русь пришли письменность, развитая книжная традиция, новые формы искусства и архитектуры. Церковь стала важным институтом, влияющим на образование, политику и повседневную жизнь людей.</p>
+          <ul>
+            <li><strong>Значение:</strong> Начало культурного и религиозного развития России в общеевропейском контексте.</li>
+            <li><strong>Последствия:</strong> Введение славянской письменности, формирование летописной традиции, развитие храмового зодчества.</li>
+            <li><strong>Международные связи:</strong> Укрепление контактов с Византией и другими христианскими государствами.</li>
+            <li><strong>Наследие:</strong> Православие стало одной из основ национальной идентичности и до сих пор влияет на культуру.</li>
+          </ul>
+          <img src="./image/kreshenie-rusi.32f4e535.png" alt="Крещение Руси" class="card-img event-img">
+          <a href="https://ru.ruwiki.ru/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8" class="hist-btn">Подробнее</a>
+        </article>
+
+        <article class="info-card event-card">
+          <h3 class="event-card__title">Отмена крепостного права (1861)</h3>
+          <p class="event-card__period">1861 год, манифест Александра II</p>
+          <p class="event-card__text">
+            Отмена крепостного права стала одним из самых важных поворотных моментов в истории России.
+            Миллионы крестьян получили личную свободу и право распоряжаться своей судьбой, что
+            изменило социальную структуру общества и запустило долгий процесс модернизации страны.
+          </p>
+          <ul class="event-card__list">
+            <li>19 февраля 1861 года Александр II подписал Манифест об отмене крепостного права.</li>
+            <li>Крестьяне получали личную свободу и могли заключать браки, переезжать, выбирать место работы.</li>
+            <li>За землю они должны были выплачивать выкупные платежи, что делало процесс освобождения сложным и долгим.</li>
+            <li>Реформа стала толчком к дальнейшим преобразованиям: судебной, военной, земской и школьной реформам.</li>
+          </ul>
+          <img src="./image/d1f3ea5625b093ba.jpeg" alt="Отмена крепостного права" class="card-img event-img">
+          <a href="https://ru.ruwiki.ru/wiki/%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8" class="hist-btn">Подробнее</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Русские хроники. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
